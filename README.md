@@ -2,41 +2,11 @@
 
 A [Jekyll](http://jekyllrb.com/) plugin for generating conversational transcripts.
 
-## In A Nutshell
+## [Demo of a Generated Page](http://jonmbake.github.io/jekyll-transcribed/2016/01/19/example.html)
 
-#### Takes this:
+## How It Works
 
-```
----
-layout: post
-title: An Example Transcript
-speakers:
-  - name: 'Jon'
-    image_url: 'https://avatars1.githubusercontent.com/u/865534'
----
-
-!# Jon @ 0:00
-**Wow!** This is *really* cool.  Now I can transcribe all my conversations easily for everyone to see.
-
-It even supports [Markdown](https://daringfireball.net/projects/markdown/) so I can easily transcribe links, lists:
-
-1. First
-2. Second
-3. Third.
-
-# And Headers, too!
-
-!# Jim @ 0:10
-**This is really cool!**  But I don't think we should publicly transcribe all our conversations.  We say some pretty crazy stuff.
-
-!# Jon @ 0:15
-Good point.
-```
-*_plugins/2016-01-19-example.transcript*
-
-#### And generates this:
-
-![Transcript Output](https://raw.githubusercontent.com/jonmbake/screenshots/master/jekyll-transcribed/convo.png)
+Converts posts with a `.transcript` extension from this [2016-01-19-example.transcript](https://github.com/jonmbake/jekyll-transcribed/blob/master/_posts/2016-01-19-example.transcript) to this [Generated Transcript Page](http://jonmbake.github.io/jekyll-transcribed/2016/01/19/example.html).
 
 ## Installation
 

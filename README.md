@@ -4,7 +4,7 @@ A [Jekyll](http://jekyllrb.com/) plugin for generating conversational transcript
 
 ## In A Nutshell
 
-Takes this:
+#### Takes this:
 
 ```
 ---
@@ -18,13 +18,23 @@ speakers:
 !# Jon @ 0:00
 **Wow!** This is *really* cool.  Now I can transcribe all my conversations easily for everyone to see.
 
-It even supports [Markdown](markdown) so I can easily transcribe links, lists
+It even supports [Markdown](markdown) so I can easily transcribe links, lists:
 
-...
+1. First
+2. Second
+3. Third.
+
+# And Headers, too!
+
+!# Jim @ 0:10
+**This is really cool!**  But I don't think we should publicly transcribe all our conversations.  We say some pretty crazy stuff.
+
+!# Jon @ 0:15
+Good point.
 ```
 *_plugins/2016-01-19-example.transcript*
 
-And generates this:
+#### And generates this:
 
 ![Transcript Output](https://raw.githubusercontent.com/jonmbake/screenshots/master/jekyll-transcribed/convo.png)
 
@@ -42,7 +52,7 @@ You also need to update `_includes/head.html` to include the `transcript.css`:
 <link rel="stylesheet" href="{{ "/css/transcripts.css" | prepend: site.baseurl }}">
 ```
 
-## Creating a Conversational Transcript
+## Creating a Transcript
 
 Transcripts must be placed in `_posts` and have a `.transcript` extension.
 
@@ -50,5 +60,5 @@ Transcripts are an extension of [Markdown](https://daringfireball.net/projects/m
 
 ### YAML Front Matter
 
-You can also include front matter to specify image URLs to use.  See example above on how this is done.
+You can also include front matter properties to specify image URLs to use for each speakers.  See example above on how this is done.
 

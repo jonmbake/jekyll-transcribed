@@ -67,6 +67,10 @@
   margin-left: 20px;
 }
 
+.speaker-right > p {
+  margin-right: -40px;
+}
+
 .speaker > p {
   text-align: center;
   padding-top:  5px;
